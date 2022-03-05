@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.5.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacFGlenn/Read-4-Me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MacFGlenn/Read-4-Me/issues"
+  },
+  "homepage": "https://github.com/MacFGlenn/Read-4-Me#readme"
 }
