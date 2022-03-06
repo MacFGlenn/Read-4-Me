@@ -1,8 +1,8 @@
-# a
+# Project
 
 ## Description
 
-a
+Description
 
 ## Table of Contents
 
@@ -15,11 +15,11 @@ a
 
 ## Installation
 
-a
+Install instructions
 
 ## Usage
 
-a
+It's good
 
 ## License
 
@@ -27,14 +27,14 @@ Open License
 
 ## Contribution
 
-a
+Contact via github
 
 ## Tests
 
-a
+tests
 
 ## Contact
 
-Github: a
-Email: a
+Github: githubusername
+Email: email@address.com
 
