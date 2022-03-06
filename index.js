@@ -26,10 +26,10 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
   // writing files
   return new Promise((resolve, reject) => {
-    fs.writeFile(`./dist/${fileName}.md`, data, (err) => {
+    fs.writeFile(`./dist/README.md`, data, (err) => {
       if (err) {
         reject(err);
         return;
@@ -75,10 +75,10 @@ function init() {
       message: usage,
     },
     {
-      type: "checkbox",
+      type: "rawlist",
       name: "license",
       message: license,
-      choices: ["first", "second", "third"], // get the actual types
+      choices: ["Open License", "MIT License", "GNU General Public License"], // get the actual types
     },
     {
       type: "input",
@@ -106,8 +106,9 @@ function init() {
 // Function call to initialize app
 init()
   .then((data) => {
+    console.log(data.license);
     return generateMarkdown(data);
   })
   .then((data) => {
-    return writeToFile(data.title, data);
+    return writeToFile(data);
   });
